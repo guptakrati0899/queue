@@ -5,9 +5,31 @@ import stack.MyLinkedList;
 
 public class MyQueue {
 	
-	public static void main(String[] args) {
+	private final MyLinkedList MyLinkedList;
+	public MyQueue(){
 		
-		System.out.println("Welcome to Queue Master Branch");
+		this.MyLinkedList = new MyLinkedList();
+	}
+	
+	
+	public void enqueue(INode myNode) {
+		
+		MyLinkedList.append(myNode);
+		
+		
+	}
+
+
+	public void printStack() {
+		
+		MyLinkedList.printNodes();
+		
+	}
+
+
+	public INode peak() {
+		
+		return MyLinkedList.head;
 	}
 	
 	
