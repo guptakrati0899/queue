@@ -6,6 +6,7 @@ import stack.MyLinkedList;
 public class MyQueue {
 	
 	private final MyLinkedList MyLinkedList;
+	private INode myNode;
 	public MyQueue(){
 		
 		this.MyLinkedList = new MyLinkedList();
@@ -20,7 +21,7 @@ public class MyQueue {
 	}
 
 
-	public void printStack() {
+	public void printQueue() {
 		
 		MyLinkedList.printNodes();
 		
@@ -35,4 +36,12 @@ public class MyQueue {
 	
 
 
-}
+	public INode dequeue() {
+		
+	        return MyLinkedList.pop();
+	    }
+	}
+	
+
+
+
